@@ -1,0 +1,18 @@
+﻿<!-- MainPage.xaml -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContactsApp.MainPage">
+
+    <StackLayout>
+        <ListView x:Name="ContactsListView" ItemsSource="{Binding Contacts}" ItemTapped="OnContactTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding PhoneNumber}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Add Contact" Clicked="OnAddContactClicked" />
+    </StackLayout>
+
+</ContentPage>

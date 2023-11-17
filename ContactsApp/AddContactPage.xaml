@@ -1,0 +1,15 @@
+<!-- AddContactPage.xaml -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContactsApp.AddContactPage">
+
+    <StackLayout>
+        <Label Text="Add Contact" FontSize="Large" HorizontalOptions="Center" Margin="0,20,0,10" />
+
+        <Entry Placeholder="Name" x:Name="NameEntry" />
+        <Entry Placeholder="Phone Number" x:Name="PhoneNumberEntry" />
+
+        <Button Text="Save" Clicked="OnSaveClicked" />
+    </StackLayout>
+
+</ContentPage>
